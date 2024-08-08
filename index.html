@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>huhu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+       <!-- ========================= NAVBAR ======================= -->
+     <nav>
+        <div class="logo">English<span>Club</span></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#activity">Activity</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+
+       <!-- ========================= BANNER ======================= -->
+      <section id="banner">
+        <div class="banner">
+            <div class="banner_text">
+                <h1 class="title_banner">LET'S <span>JOIN US!</span></h1>
+                <p class="section_text_p">Bergabunglah dengan English Club dan buka pintu menuju dunia yang lebih luas dengan kemampuan berbahasa yang lebih baik!</p> 
+                <div class="click-banner">
+                    <a href="#registration" class="btn">Click in here for registration!</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+       <!-- ========================= ABOUT ======================= -->
+       <section id="about">
+            <h1 class="title">About</h1>
+            
+            <div class="section-container">
+                <div class="section_picture">
+                    <img src="img/aboutt.jpg" alt="the kitten" class="about-pic">
+                </div>
+
+                <div class="about-dekripsi">
+                    <div class="deskripsi-about">
+                        <p>
+                            <span><b>English Club</b></span> adalah program kegiatan di luar jam pelajaran sekolah yang dirancang untuk memperkaya pengalaman belajar siswa dalam berbahasa Inggris. Dalam era globalisasi saat ini, kemampuan berbahasa Inggris menjadi salah satu keterampilan yang sangat penting dan diminati. Melalui ekstrakurikuler ini, siswa dapat mengasah kemampuan bahasa mereka dalam suasana yang lebih santai namun tetap terstruktur.<br><br>
+
+                            <hr> <br>
+
+                            📅 Setiap Hari Jumat <br>
+                            🕒 Pukul 12.30 - 15.00 <br>
+                            📍 Gedung O-203 <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- ========================= ACTIVITY ======================= -->
+       <section id="activity">
+            <h1 class="title">Activity</h1>
+
+            <div class="activity-details">
+                <div class="activity-container">
+                    <div class="details-container color-container">
+                        <div class="foto-activity">
+                            <img src="img/debatt.jpg" alt="foto" class="activity-pic">
+                        </div>
+                        <h2 class="sub-title">
+                            Debat dan Diskusi
+                        </h2>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="foto-activity">
+                            <img src="img/drama.jpg" alt="foto" class="activity-pic">
+                        </div>
+                        <h2 class="sub-title">
+                            Drama dan Teater
+                        </h2>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <div class="foto-activity">
+                            <img src="img/nulis.jpg" alt="foto" class="activity-pic">
+                        </div>
+                        <h2 class="sub-title">
+                            Writing Workshop
+                        </h2>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!-- ========================= REGISTRATION ======================= -->
+       <section id="registration">
+            <h1 class="title">Registration</h1>
+            
+            <form name="registration" class="registration-container" onsubmit="return validas()">
+                <div class="registration-container-isi">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" name="text" id="nama" required> 
+                    <div class="error" id="namaErr"></div>
+                </div>
+
+                <div class="registration-container-isi">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <div class="error" id="emailErr"></div>
+                </div>
+
+                <div class="registration-container-isi">
+                    <label for="nomor">No. Telephone</label>
+                    <input type="text" name="nomor" id="nomor" maxlength="12" required>
+                    <div class="error" id="nomorErr"></div>
+                </div>
+
+                <div class="registration-container-isi">
+                    <label for="kelas">Kelas</label>
+                    <input type="text" name="kelas" id="kelas" required> 
+                    <div class="error" id="kelasErr"></div>
+                </div>
+                
+                <div class="registration-container-isi">
+                    <div class="form-inline" id="gender">
+                        <label><input type="radio" name="gender" value="laki" required>Laki-laki</label>
+                        <label><input type="radio" name="gender" value="perempuan" required>Perempuan</label>
+                        <div class="error" id="genderErr"></div>
+                    </div>
+                </div>
+
+                <div class="registration-container-isi button">
+                    <input type="submit" class="submit" value="Submit" onclick="validasi()">
+                    
+                </div>
+                <div class="registration-container-isi button">
+                    <input type="reset" class="reset" value="Reset">
+                </div>
+            </form>
+       </section>
+
+    <!-- ========================= CONTACT ======================= -->
+     <section id="contact">
+        <h1 class="title">Contact</h1>
+        <p class="section_text_p">Jika ada yang ingin ditanyakan silahkan dm instagram kami
+        </p>
+        <div class="contact-details-container">
+            <div class="contact-informasi">
+                <img src="img/instagram (1).png" alt="Instragram" class="icon">
+                <p><a href="https://www.instagram.com/" target="_blank">EnglishClub</a></p>
+            </div>
+        </div>
+     </section>
+
+     <!-- ========================= FOOTER ======================= -->
+      <footer>
+        <nav>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+         </nav>
+         <p>Copyright &#169; 2024 EnglishClub </p>
+      </footer>
+</body>
+</html>

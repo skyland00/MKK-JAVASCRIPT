@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* NAVBAR */
+
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: #0d4eb7;
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    text-decoration-color: #0d4eb7;
+}
+
+b {
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+span {
+    color: #0d4eb7;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* BANNER */
+#banner {
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.banner {
+    background: url('img/homeee.jpg') no-repeat center center/cover;
+    border-radius: 1.5rem;
+    padding: 100px;
+    align-self: center;
+    text-align: center;
+}
+
+.banner_text {
+    background-color: #ffffffe3;
+    border-radius: 1rem;
+    padding: 45px;
+}
+
+.title_banner {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.click-banner {
+    padding-top: 0.8rem;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: .7rem;
+    background-color: #ffffffd0;
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+    padding: 1rem 2rem;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #0d4eb7d0;
+    color: white;
+}
+/* ABOUT */
+#about {
+    position: relative;
+}
+
+.about-deskripsi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.deskripsi-about p {
+    padding-top: 100px;
+}
+
+.section_picture{
+    height: 400px;
+    width: 500px;
+    margin: auto 0;
+}
+
+.about-pic {
+    border-radius: 1.5rem;
+    height: 400px;
+    width: 545px;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+/* ACTIVITY */
+#activity {
+    position: relative;
+}
+
+.activity-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.activity-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(35, 31, 31) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.foto-activity {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.activity-pic {
+    border-radius: 1rem;
+    width: 80%;
+    height: 80%;
+}
+
+.sub-title {
+    color: black;
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* REGISTRATION */
+#registration {
+    position: relative;
+}
+
+form {
+    width: 500px;
+    padding: 50px;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(35, 31, 31) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin: 4% auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0px;
+    margin-bottom: 5px;
+}
+
+label i {
+    color: #707070;
+    font-size: 80%;
+}
+
+input,
+select {
+    border: 0.1rem solid #ddd;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(250, 250, 250);
+}
+
+.registration-container-isi {
+    padding-bottom: 5px;
+}
+
+.form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding: 5px ;
+    margin: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+.input-box input, .select-box {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.button {
+    display: inline-block;
+}
+
+form input[type="text"] {
+    outline: none;
+}
+
+form input[type="submit"] {
+    font-size: 100%;
+    font-weight: 400;
+    width: 380px;
+    background-color: #707070;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #686868;
+}
+
+form input[type="reset"] {
+    font-size: 100%;
+    font-weight: 00;
+    width: 110px;
+    background-color: rgb(201, 52, 52);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background: rgb(194, 53, 53);
+}
+
+select {
+    outline: none !important;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.section_text_p {
+    text-align: center;
+}
+
+.contact-details-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem 4rem;
+}
+
+.icon {
+    cursor: default;
+    height: 2.5rem;
+}
+
+.contact-informasi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.contact-informasi p {
+    font-size: larger;
+}
+
+p a {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* FOOTER */
+footer {
+    height: 25vh;
+    background-color: #ddd;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* VALID ATAU TIDAK */
+.input-1 {
+    border: 0.1rem solid #ddd;
+}
+
+.input-2 {
+    border: 0.1rem solid red;
+}
